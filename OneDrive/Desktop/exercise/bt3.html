@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    <input type="text" placeholder="Nhập a" id="number a">
+    <input type="text" placeholder="Nhập b" id="number b">
+</label>
+<h1 id="resulr"></h1>
+<button onclick="tinhs()">Tính</button>
+</body>
+<script>
+    function tinhs() {
+        let a = parseFloat(document.getElementById("number a"))
+        let b = parseFloat(document.getElementById("number b"))
+        let S = a * b
+        document.getElementById("resulr").innerHTML = "S = a * b: " + S
+    }
+
+</script>
+</html>
